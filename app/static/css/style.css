@@ -1,0 +1,146 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #102a43;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Main sections */
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Hero section */
+#home {
+    background-color: #e0f2fe;
+    text-align: center;
+    padding: 65px 30px;
+}
+
+#home h2 {
+    font-size: 36px;
+    color: #102a43;
+    margin-bottom: 15px;
+}
+
+#home p {
+    margin-bottom: 25px;
+}
+
+/* Fare form */
+form {
+    max-width: 550px;
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 22px;
+    padding: 14px 25px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0369a1;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0f9ff;
+    border-radius: 7px;
+}
+
+/* Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #home h2 {
+        font-size: 27px;
+    }
+}

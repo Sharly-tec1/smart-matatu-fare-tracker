@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Matatu Fare Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Matatu Fare Tracker</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#fare">Estimate Fare</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Travel Smart. Know Your Fare.</h2>
+            <p>
+                Get estimated matatu fares across Nairobi
+                before starting your journey.
+            </p>
+            <a href="#fare">Check Your Fare</a>
+        </section>
+
+        <section id="fare">
+            <h2>Estimate Your Matatu Fare</h2>
+
+            <form>
+                <label for="origin">Starting Point</label>
+                <input type="text" id="origin"
+                       placeholder="e.g. Ruiru" required>
+
+                <label for="destination">Destination</label>
+                <input type="text" id="destination"
+                       placeholder="e.g. Nairobi CBD" required>
+                 <label for="travel-time">Travel Time</label>
+<select id="travel-time" required>
+    <option value="peak">Peak Hours</option>
+    <option value="offpeak">Off-Peak Hours</option>
+</select>      
+
+                <button type="submit">Calculate Fare</button>
+            </form>
+
+            <div id="result">
+                <p>Your estimated fare will appear here.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>
+                Smart Matatu Fare Tracker helps commuters
+                understand estimated transport costs using
+                route information and fare data.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Smart Matatu Fare Tracker</p>
+    </footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
